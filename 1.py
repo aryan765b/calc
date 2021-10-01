@@ -1,3 +1,8 @@
-a = float(input("enter a"))
-b = float(input("enter b"))
-print("sum = ",a+b)
+try:
+  c = input("enter all numbers with a space in between").split(" ")
+  d = 0
+  for i in c:
+    d+= int(i)
+   print("sum = ",d)
+except:
+  print("an error occured")
